@@ -17,20 +17,20 @@ VALUES (?, ?, ?)
 """, (name, year, score))
 
 # 4 - Inserindo Dados
-# cursor.execute("""
-# INSERT INTO movies (name, year, score)
-# VALUES ('Super Mario Bros', 2023, 9.5 )
-# """)
+cursor.execute("""
+INSERT INTO movies (name, year, score)
+VALUES ('Super Mario Bros', 2023, 9.5 )
+""")
         
-# cursor.execute("""
-# INSERT INTO movies (name, year, score)
-# VALUES ('Avatar', 2023, 10.0)
-# """)     
+cursor.execute("""
+INSERT INTO movies (name, year, score)
+VALUES ('Avatar', 2023, 10.0)
+""")     
 
-# cursor.execute("""
-# INSERT INTO movies (name, year, score)   
-# VALUES ('Velozes e Furiosos', 2023, 8.5)     
-# """)               
+cursor.execute("""
+INSERT INTO movies (name, year, score)   
+VALUES ('Velozes e Furiosos', 2023, 8.5)     
+""")               
 
 # 5 - Gravando Dados no BD
 connection.commit()
