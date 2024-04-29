@@ -27,5 +27,7 @@ print("\nFilmes Ordenados pelo Score\n")
 for row in cursor.execute('SELECT * FROM  movies ORDER BY score desc'):
     print(f'{row}')
 
+connection.commit()
+
 # 6 - Fechando conexão
 connection.close()
