@@ -12,7 +12,7 @@ cursor = connection.cursor()
 
 # 3 - Criando a Tabela  
 cursor.execute("""
-CREATE TABLE movies (
+CREATE TABLE movies(
         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
         year INTEGER NOT NULL,
